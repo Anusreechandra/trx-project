@@ -8,7 +8,4 @@ urlpatterns = [
     path("",views.base,name='base'),
     path("Adminprofile",views.Adminprofile,name='Adminprofile'),
 
-
-    
-
 ]
