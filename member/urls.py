@@ -5,6 +5,7 @@ app_name= 'member'
 
 urlpatterns = [
    
-   path("", views.index, name='index')
+   path("", views.index, name='index'),
+   path('profile', views.profile, name='profile')
 
 ]
