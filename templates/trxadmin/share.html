@@ -1,0 +1,145 @@
+
+{% extends 'trxadmin/base.html' %}
+{% load static %}
+{% block content %}
+
+	<!--**********************************
+            Content body start
+        ***********************************-->
+        
+
+        <div class="content-body">
+            <div class="container-fluid">
+                <div class="card">
+                    <div class="card-header d-sm-flex d-block">
+                        <div class="me-auto mb-sm-0 mb-3">
+                            <h4 class="card-title mb-2">User Listing</h4>
+                            <span>Lorem Ipsum sit amet</span>
+                        </div>
+                        <a href="javascript:void(0);" class="btn btn-info light me-3"><i class="las la-download scale3 me-2"></i>Import Csv</a>
+                        <a href="javascript:void(0);" class="btn btn-info">+ Add Customer</a>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table style-1" id="ListDatatableView">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>REFERRER</th>
+                                        <th>REFEREEC</th>
+                                        <th>COUNTRY</th>
+                                        <th>DATE</th>
+                                        <th>UNIT</th>
+                                        <th>STATUS</th>
+                                        <th>ACTION</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <h6>1.</h6>
+                                        </td>
+                                        <td>
+                                            <div class="media style-1">
+                                                <!-- <img src="../static/images/avatar/1.jpg" class="img-fluid me-2" alt=""> -->
+                                                <div class="media-body">
+                                                    <h6>John Doe</h6>
+                                                    <span>johndoe@gmail.com</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="media style-1">
+                                                <!-- <img src="../static/images/avatar/1.jpg" class="img-fluid me-2" alt=""> -->
+                                                <div class="media-body">
+                                                    <h6>John Doe</h6>
+                                                    
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div>
+                                                <h6>England</h6>
+                                                <span>COde:En</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div>
+                                                <h6 class="text-primary">10/21/2016</h6>
+                                                <span>Paid</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            Abbott-Jacobs
+                                        </td>
+                                        <td><span class="badge badge-warning">Pending</span></td>
+                                        <td>
+                                            <div class="d-flex action-button">
+                                                <a href="javascript:void(0);" class="btn btn-info btn-xs light px-2">
+                                                   <img src="{% static 'trxadmin/icons8-name-24.png' %}">
+                                                </a>
+                                               
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <h6>2.</h6>
+                                        </td>
+                                        <td>
+                                            <div class="media style-1">
+                                               
+                                                <div class="media-body">
+                                                    <h6>Martin Chuaks</h6>
+                                                    <span>martinchuaks@gmail.com</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="media style-1">
+                                                <!-- <img src="../static/images/avatar/1.jpg" class="img-fluid me-2" alt=""> -->
+                                                <div class="media-body">
+                                                    <h6>John Doe</h6>
+                                                    
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div>
+                                                <h6>Indonasia</h6>
+                                                <span>COde:In</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div>
+                                                <h6 class="text-primary">05/11/2016</h6>
+                                                <span>Pending</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            Loyto-Farik
+                                        </td>
+                                        <td><span class="badge badge-danger">Danger</span></td>
+                                        <td>
+                                            <div class="d-flex action-button">
+                                                <a href="javascript:void(0);" class="btn btn-info btn-xs light px-2">
+                                                   <img src="{% static 'trxadmin/icons8-name-24.png' %}">
+                                                </a>
+                                               
+                                            </div>
+                                        </td>
+                                    </tr>
+                                
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+                <!--**********************************
+                    Content body end
+                ***********************************-->
+
+                {% endblock %}

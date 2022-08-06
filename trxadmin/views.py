@@ -14,3 +14,12 @@ def base(request):
 
 def Adminprofile(request):
     return render(request, 'trxadmin/profile.html')
+
+def share(request):
+    return render(request, 'trxadmin/share.html')
+
+def member(request):
+    return render(request, 'trxadmin/member.html')
+
+def coindetails(request):
+    return render(request, 'trxadmin/coindetails.html')
