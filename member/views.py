@@ -10,3 +10,9 @@ def index(request):
 
 def profile(request):
     return render(request, 'member/profile.html')
+
+def transactions(request):
+    return render(request, 'member/transactions.html')
+
+def rewards(request):
+    return render(request, 'member/rewards.html')

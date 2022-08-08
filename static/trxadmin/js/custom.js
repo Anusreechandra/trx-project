@@ -335,16 +335,16 @@
 		  });
 	} 
 	
-	var vHeight = function(){
-        var ch = $(window).height() - 206;
-        $(".chatbox .msg_card_body").css('height',ch);
-    }
+	// var vHeight = function(){
+    //     var ch = $(window).height() - 206;
+    //     $(".chatbox .msg_card_body").css('height',ch);
+    // }
 	
-	var handleChatSidebar = function(){
-		$('.chat-hamburger').on('click',function(){
-			$('.chat-left-sidebar').toggleClass('show');
-		})
-	}
+	// var handleChatSidebar = function(){
+	// 	$('.chat-hamburger').on('click',function(){
+	// 		$('.chat-left-sidebar').toggleClass('show');
+	// 	})
+	// }
 	
 	var handleMenuPosition = function(){
 		
