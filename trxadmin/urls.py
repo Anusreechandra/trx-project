@@ -10,6 +10,7 @@ urlpatterns = [
     path("share",views.share,name='share'),
     path("member",views.member,name='member'),
     path("coindetails",views.coindetails,name='coindetails'),
+    path("announcement",views.announcement,name='announcement'),
 
 
     

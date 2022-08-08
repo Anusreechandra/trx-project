@@ -17,7 +17,8 @@
                             <span>Lorem Ipsum sit amet</span>
                         </div>
                         <a href="javascript:void(0);" class="btn btn-info light me-3"><i class="las la-download scale3 me-2"></i>Import Csv</a>
-                        <a href="javascript:void(0);" class="btn btn-info">+ Add Customer</a>
+                        <a href="javascript:void(0);" class="btn btn-info" data-bs-toggle="modal" data-bs-target=".bd-example-modal-lg">+ Add Customer</a>
+               
                     </div>
                     <div class="card-body">
                         <div class="table-responsive">
@@ -141,5 +142,24 @@
                 <!--**********************************
                     Content body end
                 ***********************************-->
+
+              
+                <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Modal title</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal">
+                                </button>
+                            </div>
+                            <div class="modal-body">Modal body text goes here.</div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger light" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
 
                 {% endblock %}
