@@ -8,6 +8,8 @@ urlpatterns = [
    path("", views.index, name='index'),
    path('profile/', views.profile, name='profile'),
    path('transactions/', views.transactions, name='transactions'),
-   path('rewards/', views.rewards, name='rewards')
+   path('rewards/', views.rewards, name='rewards'),
+   path('kyc/', views.kyc, name='kyc'),
+   path('coin-details/', views.coin_details, name='coin-details'),
 
 ]
