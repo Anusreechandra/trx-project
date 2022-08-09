@@ -2,61 +2,37 @@
 {% load static %}
 {% block content %}
 
-<div class="content-body">
-    <div class="container-fluid">
-        <!-- Add Project -->
-        <div class="modal fade" id="addProjectSidebar">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title">Create Project</h5>
-                        <button type="button" class="close" data-dismiss="modal"><span>&times;</span>
-                        </button>
+<!--**********************************
+            Content body start
+        ***********************************-->
+        
+        <div class="content-body">
+            <div class="container-fluid">
+                <!-- Add Project -->
+               
+             
+                <div class="row">
+                    <div class="col-xl-3 col-xxl-4 col-lg-4 col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Make alert message</h4>
+                                <div class="card-content">
+                                    <div class="sweetalert mt-5">
+                                        <button class="btn btn-danger btn sweet-wrong">Sweet Wrong</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /# card -->
                     </div>
-                    <div class="modal-body">
-                        <form>
-                            <div class="form-group">
-                                <label class="text-black font-w500">Project Name</label>
-                                <input type="text" class="form-control">
-                            </div>
-                            <div class="form-group">
-                                <label class="text-black font-w500">Deadline</label>
-                                <input type="date" class="form-control">
-                            </div>
-                            <div class="form-group">
-                                <label class="text-black font-w500">Client Name</label>
-                                <input type="text" class="form-control">
-                            </div>
-                            <div class="form-group">
-                                <button type="button" class="btn btn-primary">CREATE</button>
-                            </div>
-                        </form>
-                    </div>
+                   
+                 
                 </div>
             </div>
         </div>
         
-        <div class="row">
-           
-            <!-- /# column -->
-            <div class="col-xl-3 col-xxl-4 col-lg-4 col-md-6">
-                <div class="card">
-                    <div class="card-body">
-                        <h4 class="card-title">Sweet Text</h4>
-                        <div class="card-content">
-                            <div class="sweetalert mt-5">
-                                <button class="btn btn-primary btn sweet-text">Sweet Text</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- /# card -->
-            </div>
-            <!-- /# column -->
-           
-         
-        </div>
-    </div>
-</div>
+                <!--**********************************
+                    Content body end
+                ***********************************-->
 
             {% endblock %}
