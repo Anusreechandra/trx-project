@@ -10,18 +10,22 @@
                     <div class="card-body">
                         <div class="d-flex mb-4 align-items-start">
                             <div class="dz-media me-3">
-                                <img src="{% static 'trxadmin/images/REFFFER.png' %}" class="img-fluid" alt="">
+                                <img src="{% static 'member/images/REFFFER.png' %}" class="img-fluid" alt="">
                             </div>
                             <div class="me-auto">
-                                <p class="text-primary mb-1"> .</p>
-                                <h5 class="title font-w600 mb-2"><a href="#" class="text-black">Refere And Earn</a></h5>
-                                <span>Refere And Earn</span>
+                                <p class="text-primary mb-1"> </p>
+                                <h5 class="title font-w600 mb-2 mt-3"><a href="#" class="text-black">Refere And Earn</a>
+                                </h5>
+                                <span>Refer your friends and earn rewards</span>
                             </div>
-                            <span class="badge badge-success d-sm-inline-block d-none">Share</span>
+                            <span class="badge badge-success d-sm-inline-block mt-lg-0 mt-3">Share</span>
                         </div>
-                        <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae deleniti eaque quis vel quo eius harum ex aliquam, architecto cumque maxime ducimus minus rem amet nulla repellat animi dicta sint!</p>
-                       
-                       
+                        <p class="mb-4">Referring a friend can increase your earnings. Do not wait any longer! Double
+                            your earnings by sharing Tethering Tron with your friends. You will now be able to earn 50
+                            TRX. </p>
+
+                        <div class="text-center"><a href="#" data-bs-toggle="modal" data-bs-target="#share"
+                                class="btn btn-success">Share</a></div>
                     </div>
                 </div>
             </div>
@@ -30,25 +34,55 @@
                     <div class="card-body">
                         <div class="d-flex mb-4 align-items-start">
                             <div class="dz-media me-3">
-                                <img src="../static/images/logos/pic2.jpg" class="img-fluid" alt="">
+                                <img src="{% static 'member/images/earn.png' %}" class="img-fluid" alt="">
                             </div>
                             <div class="me-auto">
-                                <p class="text-primary mb-1">#P-000441425</p>
-                                <h5 class="title font-w600 mb-2"><a href="../post_details/index.html" class="text-black">Redesign Zenix Mobile App</a></h5>
-                                <span>We Create Your Dream</span>
+                                <p class="text-primary mb-1"> </p>
+                                <h5 class="title font-w600 mb-2 mt-3"><a href="#" class="text-black">Youtube Video</a>
+                                </h5>
+                                <span>Share your video and earn coins</span>
                             </div>
-                            <span class="badge badge-info d-sm-inline-block d-none">Compeleted</span>
+                            <span class="badge btn-youtube d-sm-inline-block mt-lg-0 mt-3">Youtube</span>
                         </div>
-                        <p class="mb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis, recusandae nam, quidem ipsa sapiente, provident quae praesentium dolores vitae officia molestiae minus dicta officiis fugit hic id vero qui facere!</p>
-                      
-                       
+                        <p class="mb-4">Post a video on YouTube tagging us to maximize your earnings. The video should
+                            not be shorter than 2 minutes. Earn upto 100 TRX by sharing your video. </p>
+                        <div class="text-center">
+
+                            <button type="button" class="btn btn-youtube" data-bs-toggle="modal"
+                                data-bs-target="#youtube">Youtube
+                            </button>
+                        </div>
+
                     </div>
                 </div>
             </div>
-            
+
         </div>
     </div>
 </div>
+<!-- share modal  -->
 
+
+<!-- Modal youtube -->
+<div class="modal fade" id="youtube">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Youtube</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal">
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <input type="text" class="form-control input-default " placeholder="input-default">
+                    </div>
+                    <div class="text-center"><a href="#" class="btn btn-primary">Sent</a></div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
 
 {% endblock %}

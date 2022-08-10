@@ -73,11 +73,11 @@
 
         <div class="nav-header">
             <a href="{% url 'member:index' %}" class="brand-logo">
-                <img src="{% static 'member/images/logo1.png' %}" alt="" style="width: 50px; height: 50p;">
+                <img class="logo-abbr" src="{% static 'member/images/logo1.png' %}" alt="" style="width: 50px; height: 50p;">
 
                 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 26.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_1" width="150" height="90" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+<svg class="brand-title" version="1.1" id="Layer_1" width="150" height="90" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 575 267.7" style="enable-background:new 0 0 575 267.7;" xml:space="preserve">
 <style type="text/css">
 	.st0{clip-path:url(#SVGID_00000036218103514661128330000010218973124875000992_);}
@@ -682,7 +682,7 @@
                     </li> -->
                     
                     <li>
-                        <a href="../widget_basic/index.html" class="ai-icon" aria-expanded="false">
+                        <a href="{% url 'member:coin-details' %}" class="ai-icon" aria-expanded="false">
                             <i class="flaticon-381-network"></i>
                             <span class="nav-text">Coin Details</span>
                         </a>
@@ -753,9 +753,96 @@
     <!-- Required vendors -->
 
 
+<!-- Modal -->
+<div class="modal fade" id="share">
+<div class="share-content">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content col-12">
+            <div class="modal-header">
+                <h5 class="modal-title">Share</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal">
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="icon-container1 d-flex">
+                    <div class="smd">
+                        <i class=" img-thumbnail fab fa-twitter fa-2x"
+                            style="color:#4c6ef5;background-color: aliceblue"></i>
+                        <p>Twitter</p>
+                    </div>
+                    <div class="smd">
+                        <i class="img-thumbnail fab fa-facebook fa-2x"
+                            style="color: #3b5998;background-color: #eceff5;"></i>
+                        <p>Facebook</p>
+                    </div>
+                    <div class="smd">
+                        <i class="img-thumbnail fab fa-reddit-alien fa-2x"
+                            style="color: #FF5700;background-color: #fdd9ce;"></i>
+                        <p>Reddit</p>
+                    </div>
+                    <div class="smd">
+                        <i class="img-thumbnail fab fa-discord fa-2x "
+                            style="color: #738ADB;background-color: #d8d8d8;"></i>
+                        <p>Discord</p>
+                    </div>
+                </div>
+                <div class="icon-container2 d-flex">
+                    <div class="smd">
+                        <i class="img-thumbnail fab fa-whatsapp fa-2x"
+                            style="color:  #25D366;background-color: #cef5dc;"></i>
+                        <p>Whatsapp</p>
+                    </div>
+                    <div class="smd">
+                        <i class="img-thumbnail fab fa-facebook-messenger fa-2x"
+                            style="color: #3b5998;background-color: #eceff5;"></i>
+                        <p>Messenger</p>
+                    </div>
+                    <div class="smd">
+                        <i class="img-thumbnail fab fa-telegram fa-2x"
+                            style="color:  #4c6ef5;background-color: aliceblue"></i>
+                        <p>Telegram</p>
+                    </div>
+                    <div class="smd">
+                        <i class="img-thumbnail fab fa-weixin fa-2x"
+                            style="color: #7bb32e;background-color: #daf1bc;"></i>
+                        <p>WeChat</p>
+                    </div>
+                </div>
+                
+                <div class="input-text-reward">
+                    <i class="fa fa-lock"></i>
+                    <input type="text" id="social_input" value="http://127.0.0.1:8000/member/1">
+                    <i class="fa fa-copy"></i>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+</div>
+
+<script>
+    var a = document.querySelectorAll(".social li a");
+    var copy = document.querySelector(".input-text-reward .fa-copy");
+    var social_input = document.getElementById('social_input');
 
 
 
+
+    for (var i = 0, length = a.length; i < length; i++) {
+        a[i].onclick = function (e) {
+
+            var social_link = e.target.getAttribute('link');
+            social_input.value = social_link;
+        };
+    }
+
+
+    copy.addEventListener('click', function () {
+        social_input.select();
+        document.execCommand('copy');
+    });
+</script>
 
 
     <script src="{% static 'member/vendor/global/global.min.js' %}"></script>

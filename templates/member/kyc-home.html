@@ -1,0 +1,74 @@
+{% extends 'member/partials/base.html' %}
+{% load static %}
+{% block content %}
+
+
+<div class="content-body">
+    <div class="container-fluid">
+
+
+        <!-- row -->
+        <div class="row">
+
+
+            <div class="col-xl-12">
+                <div class="card">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card-header" style="display: block;">
+                                <h4 class="card-title d-flex">Account created</h4>
+                                <p>Please proceed to complete identity verification.
+                                </p>
+                            </div>
+                            <div class="card-body">
+                                <div class="basic-list-group">
+                                    <div class="list-group">
+                                        <a class="list-group-item list-group-item-action flex-column align-items-start">
+                                            <div class="d-flex w-100 justify-content-between">
+                                                <h5 class="mb-3">1. Create Account</h5>
+                                            </div>
+                                            <p class="mb-1">Enter your account details.</p>
+                                        </a>
+                                        <a class="list-group-item list-group-item-action flex-column align-items-start">
+                                            <div class="d-flex w-100 justify-content-between">
+                                                <h5 class="mb-3">2. Verify Identity</h5>
+                                            </div>
+                                            <p class="mb-1">Verify your identity to protect your account.</p>
+                                        </a>
+                                        <a class="list-group-item list-group-item-action flex-column align-items-start">
+                                            <div class="d-flex w-100 justify-content-between">
+                                                <h5 class="mb-3">3. Unlock Wallet</h5>
+                                            </div>
+                                            <p class="mb-1">Get your wallet and start trading.</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 d-md-inline d-none">
+                            
+                            <div class="p-5 mt-10">
+                                <div class="text-center"><img
+                                        src="../../static/member/images/nft-gift-open.svg"
+                                        class="mt-5" >
+                                    <div data-bn-type="text" class="css-1d6w3z5">You're almost there!</div>
+                                    <div data-bn-type="text" class="css-geb96r">Next, complete identity verification for
+                                        your account.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-12 text-center">
+                            <a href="{% url 'member:kyc-main' %}" class="btn btn-primary btn-lg mb-4">Verify Now</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+{% endblock %}

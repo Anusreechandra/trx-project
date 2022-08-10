@@ -17,8 +17,11 @@ def transactions(request):
 def rewards(request):
     return render(request, 'member/rewards.html')
 
-def kyc(request):
-    return render(request, 'member/kyc.html')
+def kyc_home(request):
+    return render(request, 'member/kyc-home.html')
 
 def coin_details(request):
     return render(request, 'member/coin-details.html')
+
+def kyc(request):
+    return render(request, 'member/kyc.html')
