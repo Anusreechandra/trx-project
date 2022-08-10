@@ -11,6 +11,10 @@ urlpatterns = [
     path("member",views.member,name='member'),
     path("coindetails",views.coindetails,name='coindetails'),
     path("announcement",views.announcement,name='announcement'),
+    path("shareprofile",views.shareprofile,name='shareprofile'),
+    path("profile",views.memberprofile,name='profile'),
+    path("notifications",views.notifications,name='notifications'),
+    path("singlenotification",views.singlenotification,name='singlenotification'),
 
 
     

@@ -26,3 +26,15 @@ def coindetails(request):
 
 def announcement(request):
     return render(request, 'trxadmin/announcement.html')
+
+def shareprofile(request):
+    return render(request, 'trxadmin/shareprofile.html')
+
+def memberprofile(request):
+    return render(request, 'trxadmin/member profile.html')
+
+def notifications(request):
+    return render(request, 'trxadmin/notifications.html')
+
+def singlenotification(request):
+    return render(request, 'trxadmin/singlenotification.html')
