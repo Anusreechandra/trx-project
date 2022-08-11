@@ -660,15 +660,16 @@
                 </div>
                 <ul class="metismenu" id="">
                     <li class="nav-label first">Main Menu</li>
-                    <li><a class=" ai-icon" href="{% url 'member:index' %}" aria-expanded="false">
+                    <li class="{% if is_index %}mm-active{% endif %}">
+                        <a class=" ai-icon" href="{% url 'member:index' %}" aria-expanded="false">
                             <i class="flaticon-144-layout"></i>
                             <span class="nav-text">Dashboard</span>
                         </a>
 
 
                     </li>
-                    <li>
-                        <a  class=" ai-icon" href="{% url 'member:rewards' %}" aria-expanded="false">
+                    <li  class="{% if is_rewards %}mm-active{% endif %}">
+                        <a  class=" ai-icon " href="{% url 'member:rewards' %}" aria-expanded="false">
                             <i class="flaticon-003-diamond"></i>
                             <span class="nav-text">Rewards</span>
                         </a>
@@ -681,13 +682,13 @@
 
                     </li> -->
                     
-                    <li>
-                        <a href="{% url 'member:coin-details' %}" class="ai-icon" aria-expanded="false">
+                    <li class="{% if is_coin_details %}mm-active{% endif %}">
+                        <a href="{% url 'member:coin-details' %}" class="ai-icon " aria-expanded="false">
                             <i class="flaticon-381-network"></i>
                             <span class="nav-text">Coin Details</span>
                         </a>
                     </li>
-                    <li>
+                    <li class="{% if is_transactions %}mm-active{% endif %}">
                         <a href="{% url 'member:transactions' %}" class="ai-icon" aria-expanded="false">
                             <i class="flaticon-381-settings-2"></i>
                             <span class="nav-text">Transactions</span>
