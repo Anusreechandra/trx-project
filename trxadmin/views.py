@@ -1,12 +1,16 @@
+from multiprocessing import context
 from django.shortcuts import render
 
 # Create your views here.
 
 
 def Trxadmin(request):
+    context={
+        "is_index":True,
+    }
 
         
-    return render(request,'trxadmin/index.html')
+    return render(request,'trxadmin/index.html',context)
 
 def base(request):
     return render(request,'trxadmin/base.html')
@@ -16,18 +20,31 @@ def Adminprofile(request):
     return render(request,'trxadmin/profile.html')
 
 def share(request):
-    return render(request,'trxadmin/share.html')
+    context={
+        "is_share":True,
+    }
+    return render(request,'trxadmin/share.html',context)
 
 def member(request):
-    return render(request,'trxadmin/member.html')
+    context={
+        "is_member":True,
+    }
+    return render(request,'trxadmin/member.html',context)
 
 def coindetails(request):
-    return render(request,'trxadmin/coindetails.html')
+    context={
+        "is_coin":True,
+    }
+    return render(request,'trxadmin/coindetails.html',context)
 
 def announcement(request):
-    return render(request, 'trxadmin/announcement.html')
+    context={
+        "is_announcement":True,
+    }
+    return render(request, 'trxadmin/announcement.html',context)
 
 def shareprofile(request):
+    
     return render(request, 'trxadmin/shareprofile.html')
 
 def memberprofile(request):
