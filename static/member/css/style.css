@@ -75,8 +75,13 @@
 
 :root {
   --primary: #b21212;
+<<<<<<< HEAD:static/member/css/style.css
   --secondary: #6418C3;
   --primary-hover: #e66025;
+=======
+  --secondary: #b21212;
+  --primary-hover: #b21212;
+>>>>>>> anu:static/trxadmin/css/style.css
   --primary-light: #fbe5dc;
   --primary-dark: #943911;
   --rgba-primary-1: rgba(235, 129, 83, 0.1);
@@ -289,7 +294,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
   --bs-primary: #b21212;
-  --bs-secondary: #6418C3;
+  --bs-secondary: #b21212;
   --bs-success: #68CF29;
   --bs-info: #51A6F5;
   --bs-warning: #FFAB2D;
@@ -3590,21 +3595,21 @@ fieldset:disabled .btn {
 
 .btn-secondary {
   color: #fff;
-  background-color: #6418C3;
-  border-color: #6418C3;
+  background-color: #b21212;
+  border-color: #b21212;
 }
 
 .btn-secondary:hover {
   color: #fff;
-  background-color: #5514a6;
-  border-color: #50139c;
+  background-color: #b21212;
+  border-color: #b21212;
 }
 
 .btn-check:focus+.btn-secondary,
 .btn-secondary:focus {
   color: #fff;
-  background-color: #5514a6;
-  border-color: #50139c;
+  background-color: #b21212;
+  border-color: #b21212;
   box-shadow: 0 0 0 0.25rem rgba(123, 59, 204, 0.5);
 }
 
@@ -3614,7 +3619,7 @@ fieldset:disabled .btn {
 .btn-secondary.active,
 .show>.btn-secondary.dropdown-toggle {
   color: #fff;
-  background-color: #50139c;
+  background-color: #b21212;
   border-color: #4b1292;
 }
 
@@ -3629,8 +3634,8 @@ fieldset:disabled .btn {
 .btn-secondary:disabled,
 .btn-secondary.disabled {
   color: #fff;
-  background-color: #6418C3;
-  border-color: #6418C3;
+  background-color: #b21212;
+  border-color: #b21212;
 }
 
 .btn-success {
@@ -3944,14 +3949,14 @@ fieldset:disabled .btn {
 }
 
 .btn-outline-secondary {
-  color: #6418C3;
-  border-color: #6418C3;
+  color: #b21212;
+  border-color: #b21212;
 }
 
 .btn-outline-secondary:hover {
   color: #fff;
-  background-color: #6418C3;
-  border-color: #6418C3;
+  background-color: #b21212;
+  border-color: #b21212;
 }
 
 .btn-check:focus+.btn-outline-secondary,
@@ -3965,8 +3970,8 @@ fieldset:disabled .btn {
 .btn-outline-secondary.active,
 .btn-outline-secondary.dropdown-toggle.show {
   color: #fff;
-  background-color: #6418C3;
-  border-color: #6418C3;
+  background-color: #b21212;
+  border-color: #b21212;
 }
 
 .btn-check:checked+.btn-outline-secondary:focus,
@@ -3979,7 +3984,7 @@ fieldset:disabled .btn {
 
 .btn-outline-secondary:disabled,
 .btn-outline-secondary.disabled {
-  color: #6418C3;
+  color: #b21212;
   background-color: transparent;
 }
 
@@ -7624,12 +7629,12 @@ fieldset:disabled .btn {
 }
 
 .link-secondary {
-  color: #6418C3;
+  color: #b21212;
 }
 
 .link-secondary:hover,
 .link-secondary:focus {
-  color: #50139c;
+  color: #b21212;
 }
 
 .link-success {
@@ -8088,7 +8093,7 @@ fieldset:disabled .btn {
 }
 
 .border-secondary {
-  border-color: #6418C3 !important;
+  border-color: #b21212 !important;
 }
 
 .border-success {
@@ -16833,8 +16838,13 @@ html[dir="rtl"] [direction="rtl"][data-sidebar-style="compact"]:not([data-layout
 
 :root {
   --primary: #b21212;
+<<<<<<< HEAD:static/member/css/style.css
   --secondary: #6418C3;
   --primary-hover: #e66025;
+=======
+  --secondary: #b21212;
+  --primary-hover: #b21212;
+>>>>>>> anu:static/trxadmin/css/style.css
   --primary-light: #fbe5dc;
   --primary-dark: #943911;
   --rgba-primary-1: rgba(235, 129, 83, 0.1);
@@ -17108,8 +17118,13 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
 */
 :root {
   --primary: #b21212;
+<<<<<<< HEAD:static/member/css/style.css
   --secondary: #6418C3;
   --primary-hover: #e66025;
+=======
+  --secondary: #b21212;
+  --primary-hover: #b21212;
+>>>>>>> anu:static/trxadmin/css/style.css
   --primary-light: #fbe5dc;
   --primary-dark: #943911;
   --rgba-primary-1: rgba(235, 129, 83, 0.1);
@@ -17470,8 +17485,13 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
 
 :root {
   --primary: #b21212;
+<<<<<<< HEAD:static/member/css/style.css
   --secondary: #6418C3;
   --primary-hover: #e66025;
+=======
+  --secondary: #b21212;
+  --primary-hover: #b21212;
+>>>>>>> anu:static/trxadmin/css/style.css
   --primary-light: #fbe5dc;
   --primary-dark: #943911;
   --rgba-primary-1: rgba(235, 129, 83, 0.1);
@@ -19260,7 +19280,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
 
 .chatbox .nav {
   padding: 1rem 1rem 0 1rem;
-  background: #6418C3;
+  background: #b21212;
   border: 0;
   justify-content: space-between;
 }
@@ -19621,7 +19641,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
   z-index: 9;
   top: 15.75rem;
   right: 100%;
-  background-color: #6418C3;
+  background-color: #b21212;
   color: #fff;
   display: inline-block;
   height: 3rem;
@@ -19716,7 +19736,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
 }
 
 .dz-demo-panel .dz-demo-bx.demo-active {
-  border-color: #6418C3;
+  border-color: #b21212;
 }
 
 .dz-demo-panel .dz-demo-bx.demo-active .overlay-layer {
@@ -25449,7 +25469,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
 
 [data-primary="color_2"] {
   --primary: #191e3a;
-  --secondary: #6418C3;
+  --secondary: #b21212;
   --primary-hover: #0a0c16;
   --primary-dark: black;
   --rgba-primary-1: rgba(25, 30, 58, 0.1);
@@ -25465,8 +25485,13 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
 
 [data-primary="color_3"] {
   --primary: #b21212;
+<<<<<<< HEAD:static/member/css/style.css
   --secondary: #6418C3;
   --primary-hover: #e66025;
+=======
+  --secondary: #b21212;
+  --primary-hover: #b21212;
+>>>>>>> anu:static/trxadmin/css/style.css
   --primary-dark: #943911;
   --rgba-primary-1: rgba(235, 129, 83, 0.1);
   --rgba-primary-2: rgba(235, 129, 83, 0.2);
@@ -25481,7 +25506,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
 
 [data-primary="color_4"] {
   --primary: #4527a0;
-  --secondary: #6418C3;
+  --secondary: #b21212;
   --primary-hover: #331d77;
   --primary-dark: #100925;
   --rgba-primary-1: rgba(69, 39, 160, 0.1);
@@ -25497,7 +25522,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
 
 [data-primary="color_5"] {
   --primary: #c62828;
-  --secondary: #6418C3;
+  --secondary: #b21212;
   --primary-hover: #9c1f1f;
   --primary-dark: #470e0e;
   --rgba-primary-1: rgba(198, 40, 40, 0.1);
@@ -25513,7 +25538,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
 
 [data-primary="color_6"] {
   --primary: #283593;
-  --secondary: #6418C3;
+  --secondary: #b21212;
   --primary-hover: #1d276b;
   --primary-dark: #070a1b;
   --rgba-primary-1: rgba(40, 53, 147, 0.1);
@@ -25529,7 +25554,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
 
 [data-primary="color_7"] {
   --primary: #7356f1;
-  --secondary: #6418C3;
+  --secondary: #b21212;
   --primary-hover: #4c27ed;
   --primary-dark: #290da1;
   --rgba-primary-1: rgba(115, 86, 241, 0.1);
@@ -25545,7 +25570,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
 
 [data-primary="color_8"] {
   --primary: #5bcfc5;
-  --secondary: #6418C3;
+  --secondary: #b21212;
   --primary-hover: #38bfb3;
   --primary-dark: #217069;
   --rgba-primary-1: rgba(91, 207, 197, 0.1);
@@ -25561,7 +25586,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
 
 [data-primary="color_9"] {
   --primary: #00838f;
-  --secondary: #6418C3;
+  --secondary: #b21212;
   --primary-hover: #00545c;
   --primary-dark: black;
   --rgba-primary-1: rgba(0, 131, 143, 0.1);
@@ -25577,7 +25602,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
 
 [data-primary="color_10"] {
   --primary: #ff8f16;
-  --secondary: #6418C3;
+  --secondary: #b21212;
   --primary-hover: #e27500;
   --primary-dark: #7c4000;
   --rgba-primary-1: rgba(255, 143, 22, 0.1);
@@ -25593,7 +25618,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
 
 [data-primary="color_11"] {
   --primary: #6673fd;
-  --secondary: #6418C3;
+  --secondary: #b21212;
   --primary-hover: #3445fc;
   --primary-dark: #0314c7;
   --rgba-primary-1: rgba(102, 115, 253, 0.1);
@@ -25609,7 +25634,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
 
 [data-primary="color_12"] {
   --primary: #558b2f;
-  --secondary: #6418C3;
+  --secondary: #b21212;
   --primary-hover: #3e6522;
   --primary-dark: #0f1908;
   --rgba-primary-1: rgba(85, 139, 47, 0.1);
@@ -25625,7 +25650,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
 
 [data-primary="color_13"] {
   --primary: #2a2a2a;
-  --secondary: #6418C3;
+  --secondary: #b21212;
   --primary-hover: #111111;
   --primary-dark: black;
   --rgba-primary-1: rgba(42, 42, 42, 0.1);
@@ -25641,7 +25666,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
 
 [data-primary="color_14"] {
   --primary: #1367c8;
-  --secondary: #6418C3;
+  --secondary: #b21212;
   --primary-hover: #0f4f99;
   --primary-dark: #061f3c;
   --rgba-primary-1: rgba(19, 103, 200, 0.1);
@@ -25657,7 +25682,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
 
 [data-primary="color_15"] {
   --primary: #ed0b4c;
-  --secondary: #6418C3;
+  --secondary: #b21212;
   --primary-hover: #bc093c;
   --primary-dark: #5b041d;
   --rgba-primary-1: rgba(237, 11, 76, 0.1);
@@ -25689,8 +25714,13 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
 
 :root {
   --primary: #b21212;
+<<<<<<< HEAD:static/member/css/style.css
   --secondary: #6418C3;
   --primary-hover: #e66025;
+=======
+  --secondary: #b21212;
+  --primary-hover: #b21212;
+>>>>>>> anu:static/trxadmin/css/style.css
   --primary-light: #fbe5dc;
   --primary-dark: #943911;
   --rgba-primary-1: rgba(235, 129, 83, 0.1);
@@ -25897,8 +25927,13 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
 
 :root {
   --primary: #b21212;
+<<<<<<< HEAD:static/member/css/style.css
   --secondary: #6418C3;
   --primary-hover: #e66025;
+=======
+  --secondary: #b21212;
+  --primary-hover: #b21212;
+>>>>>>> anu:static/trxadmin/css/style.css
   --primary-light: #fbe5dc;
   --primary-dark: #943911;
   --rgba-primary-1: rgba(235, 129, 83, 0.1);
@@ -26435,7 +26470,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
 [data-theme-version="dark"] .nav-tabs .nav-link.active {
   color: #fff;
   background: transparent;
-  border-color: #6418C3;
+  border-color: #b21212;
 }
 
 [data-theme-version="dark"] .card-tabs .nav-tabs,
@@ -26740,12 +26775,12 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
 }
 
 [data-theme-version="dark"] .my-profile a {
-  color: #6418C3;
+  color: #b21212;
   background: #fff;
 }
 
 [data-theme-version="dark"] .portofolio-social li a {
-  border-color: #6418C3;
+  border-color: #b21212;
   color: #fff;
 }
 
@@ -27409,7 +27444,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
 }
 
 #external-events [data-class="bg-secondary"]::before {
-  background: #6418C3;
+  background: #b21212;
 }
 
 .fc .fc-row .fc-content-skeleton table,
@@ -28436,7 +28471,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
 
 .ct-series-a .ct-area,
 .ct-series-a .ct-slice-pie {
-  fill: #6418C3;
+  fill: #b21212;
 }
 
 .ct-series-b .ct-area,
@@ -29204,8 +29239,13 @@ svg text {
 
 :root {
   --primary: #b21212;
+<<<<<<< HEAD:static/member/css/style.css
   --secondary: #6418C3;
   --primary-hover: #e66025;
+=======
+  --secondary: #b21212;
+  --primary-hover: #b21212;
+>>>>>>> anu:static/trxadmin/css/style.css
   --primary-light: #fbe5dc;
   --primary-dark: #943911;
   --rgba-primary-1: rgba(235, 129, 83, 0.1);
@@ -29450,14 +29490,14 @@ svg text {
 }
 
 .checkbox-secondary .form-check-input:focus {
-  border-color: #6418C3;
+  border-color: #b21212;
   outline: 0;
   box-shadow: 0 0 0 0.25rem rgba(100, 24, 195, 0.25);
 }
 
 .checkbox-secondary .form-check-input:checked {
-  background-color: #6418C3;
-  border-color: #6418C3;
+  background-color: #b21212;
+  border-color: #b21212;
 }
 
 [data-theme-version="dark"] .checkbox-secondary .form-check-input:checked {
@@ -29911,8 +29951,13 @@ svg text {
 
 :root {
   --primary: #b21212;
+<<<<<<< HEAD:static/member/css/style.css
   --secondary: #6418C3;
   --primary-hover: #e66025;
+=======
+  --secondary: #b21212;
+  --primary-hover: #b21212;
+>>>>>>> anu:static/trxadmin/css/style.css
   --primary-light: #fbe5dc;
   --primary-dark: #943911;
   --rgba-primary-1: rgba(235, 129, 83, 0.1);
@@ -30281,8 +30326,13 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
 
 :root {
   --primary: #b21212;
+<<<<<<< HEAD:static/member/css/style.css
   --secondary: #6418C3;
   --primary-hover: #e66025;
+=======
+  --secondary: #b21212;
+  --primary-hover: #b21212;
+>>>>>>> anu:static/trxadmin/css/style.css
   --primary-light: #fbe5dc;
   --primary-dark: #943911;
   --rgba-primary-1: rgba(235, 129, 83, 0.1);
@@ -30338,8 +30388,13 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
 
 :root {
   --primary: #b21212;
+<<<<<<< HEAD:static/member/css/style.css
   --secondary: #6418C3;
   --primary-hover: #e66025;
+=======
+  --secondary: #b21212;
+  --primary-hover: #b21212;
+>>>>>>> anu:static/trxadmin/css/style.css
   --primary-light: #fbe5dc;
   --primary-dark: #943911;
   --rgba-primary-1: rgba(235, 129, 83, 0.1);
@@ -30411,8 +30466,13 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
 
 :root {
   --primary: #b21212;
+<<<<<<< HEAD:static/member/css/style.css
   --secondary: #6418C3;
   --primary-hover: #e66025;
+=======
+  --secondary: #b21212;
+  --primary-hover: #b21212;
+>>>>>>> anu:static/trxadmin/css/style.css
   --primary-light: #fbe5dc;
   --primary-dark: #943911;
   --rgba-primary-1: rgba(235, 129, 83, 0.1);
@@ -31675,7 +31735,7 @@ table {
 .alert-secondary {
   background: #b484f0;
   border-color: #b484f0;
-  color: #6418C3;
+  color: #b21212;
 }
 
 [data-theme-version="dark"] .alert-secondary {
@@ -31751,7 +31811,7 @@ table {
 }
 
 .alert-alt.alert-secondary {
-  border-left: 0.25rem solid #6418C3;
+  border-left: 0.25rem solid #b21212;
 }
 
 .alert-alt.alert-success {
@@ -31822,9 +31882,9 @@ table {
 }
 
 .alert.alert-secondary.solid {
-  background: #6418C3;
+  background: #b21212;
   color: #fff;
-  border-color: #6418C3;
+  border-color: #b21212;
 }
 
 .alert.alert-success.solid {
@@ -31881,7 +31941,7 @@ table {
 .alert.alert-outline-secondary {
   background: transparent;
   color: #7e7e7e;
-  border-color: #6418C3;
+  border-color: #b21212;
 }
 
 .alert.alert-outline-success {
@@ -31995,8 +32055,8 @@ table {
 }
 
 .badge-outline-secondary {
-  border: 0.0625rem solid #6418C3;
-  color: #6418C3;
+  border: 0.0625rem solid #b21212;
+  color: #b21212;
 }
 
 [data-theme-version="dark"] .badge-outline-secondary {
@@ -32074,7 +32134,7 @@ table {
 }
 
 .badge-secondary {
-  background-color: #6418C3;
+  background-color: #b21212;
 }
 
 .badge-info {
@@ -32134,7 +32194,7 @@ table {
 
 .light.badge-secondary {
   background: #d0b2f5;
-  color: #6418C3;
+  color: #b21212;
 }
 
 [data-theme-version="dark"] .light.badge-secondary {
@@ -32517,7 +32577,7 @@ button:focus {
 }
 
 .light.btn-secondary g [fill] {
-  fill: #6418C3;
+  fill: #b21212;
 }
 
 [data-theme-version="dark"] .light.btn-secondary {
@@ -32527,8 +32587,8 @@ button:focus {
 }
 
 .light.btn-secondary:hover {
-  background-color: #6418C3;
-  border-color: #6418C3;
+  background-color: #b21212;
+  border-color: #b21212;
   color: #fff;
 }
 
@@ -32676,16 +32736,16 @@ button:focus {
 }
 
 .btn.tp-btn.btn-secondary {
-  color: #6418C3;
+  color: #b21212;
 }
 
 .btn.tp-btn.btn-secondary g [fill] {
-  fill: #6418C3;
+  fill: #b21212;
 }
 
 .btn.tp-btn.btn-secondary:hover {
-  background-color: #6418C3;
-  border-color: #6418C3;
+  background-color: #b21212;
+  border-color: #b21212;
   color: #fff;
 }
 
@@ -32825,21 +32885,21 @@ button:focus {
 }
 
 .btn.tp-btn-light.btn-secondary {
-  color: #6418C3;
+  color: #b21212;
 }
 
 .btn.tp-btn-light.btn-secondary g [fill] {
-  fill: #6418C3;
+  fill: #b21212;
 }
 
 .btn.tp-btn-light.btn-secondary:hover {
   background-color: #dec8f8;
   border-color: #dec8f8;
-  color: #6418C3;
+  color: #b21212;
 }
 
 .btn.tp-btn-light.btn-secondary:hover g [fill] {
-  fill: #6418C3;
+  fill: #b21212;
 }
 
 .btn.tp-btn-light.btn-warning {
@@ -33977,7 +34037,7 @@ button:focus {
 }
 
 .label-secondary {
-  background: #6418C3;
+  background: #b21212;
   color: #fff;
 }
 
@@ -34087,8 +34147,8 @@ code {
 .list-group-item.disabled,
 .list-group-item:disabled {
   color: #fff;
-  background-color: #6418C3;
-  border-color: #6418C3;
+  background-color: #b21212;
+  border-color: #b21212;
 }
 
 [class*="bg-"] .list-group-item {
@@ -34553,7 +34613,7 @@ code {
 }
 
 .popover {
-  border: 0.125rem solid #6418C3;
+  border: 0.125rem solid #b21212;
   min-width: 13.125rem;
   box-shadow: 0 0 1.875rem 0 rgba(0, 0, 0, 0.1);
 }
@@ -34563,7 +34623,7 @@ code {
 }
 
 .popover-header {
-  background: #6418C3;
+  background: #b21212;
   color: #fff;
   font-weight: 300;
 }
@@ -34605,26 +34665,26 @@ code {
 .bs-popover-auto[data-popper-placement^="top"] .arrow::after,
 .bs-popover-auto[x-placement^="top"] .arrow::after {
   bottom: 0rem;
-  border-top-color: #6418C3;
+  border-top-color: #b21212;
 }
 
 .bs-popover-left .arrow::after,
 .bs-popover-auto[x-placement^="left"] .arrow::after {
   right: 0rem;
-  border-left-color: #6418C3;
+  border-left-color: #b21212;
 }
 
 .bs-popover-right .arrow::after,
 .bs-popover-auto[x-placement^="right"] .arrow::after {
   left: 0rem;
-  border-right-color: #6418C3;
+  border-right-color: #b21212;
 }
 
 .bs-popover-bottom .arrow::after,
 .bs-popover-auto[data-popper-placement^="bottom"] .arrow::after,
 .bs-popover-auto[x-placement^="bottom"] .arrow::after {
   top: 0rem;
-  border-bottom-color: #6418C3;
+  border-bottom-color: #b21212;
 }
 
 .note-popover {
@@ -36359,7 +36419,7 @@ code {
 .table.bg-secondary-hover tr:hover td,
 .table.bg-secondary-hover tr:hover th {
   background: rgba(100, 24, 195, 0.1);
-  color: #6418C3 !important;
+  color: #b21212 !important;
 }
 
 .table.bg-info-hover th,
@@ -38245,7 +38305,7 @@ table.dataTable.display tbody td {
 .caret a {
   height: 40px;
   width: 50px;
-  background: #6418C3;
+  background: #b21212;
   display: block;
   line-height: 40px;
   text-align: center;
@@ -39115,7 +39175,7 @@ table.dataTable.display tbody td {
 .swiper-box .swiper-scrollbar-drag {
   width: 8px;
   left: -3px;
-  background: #6418C3;
+  background: #b21212;
 }
 
 .swiper-box:after {
@@ -39899,7 +39959,7 @@ table.dataTable.display tbody td {
     width: 45px;
     line-height: 45px;
     text-align: center;
-    background-color: #6418C3;
+    background-color: #b21212;
     color: #fff;
     border-radius: 50%;
     right: 10px;
@@ -41603,8 +41663,13 @@ html[dir="rtl"] [direction="rtl"][data-sidebar-style="compact"]:not([data-layout
 
 :root {
   --primary: #b21212;
+<<<<<<< HEAD:static/member/css/style.css
   --secondary: #6418C3;
   --primary-hover: #e66025;
+=======
+  --secondary: #b21212;
+  --primary-hover: #b21212;
+>>>>>>> anu:static/trxadmin/css/style.css
   --primary-light: #fbe5dc;
   --primary-dark: #943911;
   --rgba-primary-1: rgba(235, 129, 83, 0.1);
@@ -42141,7 +42206,7 @@ html[dir="rtl"] [direction="rtl"][data-sidebar-style="compact"]:not([data-layout
 [data-theme-version="dark"] .nav-tabs .nav-link.active {
   color: #fff;
   background: transparent;
-  border-color: #6418C3;
+  border-color: #b21212;
 }
 
 [data-theme-version="dark"] .card-tabs .nav-tabs,
@@ -42446,12 +42511,12 @@ html[dir="rtl"] [direction="rtl"][data-sidebar-style="compact"]:not([data-layout
 }
 
 [data-theme-version="dark"] .my-profile a {
-  color: #6418C3;
+  color: #b21212;
   background: #fff;
 }
 
 [data-theme-version="dark"] .portofolio-social li a {
-  border-color: #6418C3;
+  border-color: #b21212;
   color: #fff;
 }
 
