@@ -9,8 +9,11 @@ urlpatterns = [
 
     path("about",views.about,name='about'),
     path("contactus",views.contactus,name='contactus'),
-    path("login",views.login,name='login'),
+    path("member/login",views.login_attempt,name='login'),
     path("signup",views.signup,name='signup'),
     path("FAQ",views.faq,name='FAQ'),
+    path('verify/<auth_token>' , views.verify , name="verify"),
+    path('sent-mail', views.sent_mail, name='sent_mail'),
+    path('error' , views.error_page , name="error")
 
 ]

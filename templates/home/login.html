@@ -12,6 +12,15 @@
     }
 </style>
   <div class="vh-100 d-flex justify-content-center">
+    {% if messages %}
+
+            {% for message in messages %}
+            <div class="alert alert-info">
+                {{ message }}
+            </div>
+            {% endfor %}
+      
+        {% endif %}
     <div class="form-access my-auto">
       <form>
         <span>Sign In</span>
