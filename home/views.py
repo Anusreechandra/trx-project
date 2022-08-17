@@ -13,64 +13,6 @@ from django.contrib.auth.decorators import login_required
 #  APP password vulvpmwpjvvwqxkg
 
 
-def index(request):
-
-        context={
-            "is_index":True,
-
-        }
-        return render(request,'home/index.html',context)  
-
-
-
-def about(request):
-
-     context={
-            "is_about":True,
-
-        }
-        
-     return render(request,'home/about.html',context)
-
-def contactus(request):
-     context={
-            "is_contactus":True,
-
-        }
-  
-     return render(request,'home/contactus.html',context)
-        
-# def login(request):
-#      return render(request, 'home/login.html')
-
-
-def login_attempt(request):
-    if request.method == 'POST':
-        username = request.POST.get('username')
-        password = request.POST.get('password')
-
-        user_obj = User.objects.filter(username = username).first()
-        if user_obj is None:
-            messages.success(request, 'User not found.')
-            return redirect('/member/login')
-        
-        
-        profile_obj = Profile.objects.filter(user = user_obj ).first()
-
-        if not profile_obj.is_verified:
-            messages.success(request, 'Profile is not verified check your mail.')
-            return redirect('/member/login')
-
-        user = authenticate(username = username , password = password)
-        if user is None:
-            messages.success(request, 'Wrong password.')
-            return redirect('/member/login')
-        
-        login(request , user)
-        return redirect('/')
-    return render(request , 'home/login.html')
-
-
 def signup(request):
     if request.method == 'POST':
         username = request.POST.get('username')
@@ -150,3 +92,71 @@ def send_mail_after_registration(email , token):
 
 def error_page(request):
     return  render(request , 'home/error.html')
+
+
+def login_attempt(request):
+    if request.method == 'POST':
+        username = request.POST.get('username')
+        password = request.POST.get('password')
+
+        user_obj = User.objects.filter(username = username).first()
+        print(user_obj)
+        if user_obj is None:
+            messages.success(request, 'User not found.')
+            return redirect('/member/login')
+        
+        
+        profile_obj = Profile.objects.filter(user = user_obj ).first()
+
+        if not profile_obj.is_verified:
+            messages.success(request, 'Profile is not verified check your mail.')
+            return redirect('/member/login')
+
+        user = authenticate(username = username , password = password)
+        if user is None:
+            messages.success(request, 'Wrong password.')
+            return redirect('/member/login')
+        request.session['userid']=user.id
+        login(request , user)
+        return redirect('/member')
+    return render(request , 'home/login.html')
+
+
+def logout(request):
+    del request.session['userid']
+    return redirect('/member/login')
+
+def index(request):
+
+        context={
+            "is_index":True,
+
+        }
+        return render(request,'home/index.html',context)  
+
+
+
+def about(request):
+
+     context={
+            "is_about":True,
+
+        }
+        
+     return render(request,'home/about.html',context)
+
+def contactus(request):
+     context={
+            "is_contactus":True,
+
+        }
+  
+     return render(request,'home/contactus.html',context)
+        
+# def login(request):
+#      return render(request, 'home/login.html')
+
+
+
+
+
