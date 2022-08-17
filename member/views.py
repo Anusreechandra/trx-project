@@ -38,4 +38,4 @@ def coin_details(request):
     return render(request, 'member/coin-details.html',context)
 
 def kyc(request):
-    return render(request, 'member/kyc.html')
+    return render(request, 'member/kycnew.html')
