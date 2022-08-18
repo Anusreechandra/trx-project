@@ -15,7 +15,7 @@
             <div class="form">
                 <div class="left-side">
                     <div class="left-heading">
-                        <h3>indeed</h3>
+                        <!-- <h3>indeed</h3> -->
                     </div>
                     <div class="steps-content">
                         <h3>Step <span class="step-number">1</span></h3>
@@ -27,8 +27,9 @@
                     <ul class="progress-bar">
                         <li class="active">Select Country</li>
                         <li>Personal Information</li>
-                        <li>Work Experience</li>
-                        <li>User Photo</li>
+                        <li>Government issued ID </li>
+                        <li>Facial Recognition</li>
+                        <!-- <li>Review time : 1 Day</li> -->
                     </ul>
                     
     
@@ -67,26 +68,38 @@
                     <div class="main">
                         <small><i class="fa fa-smile-o"></i></small>
                         <div class="text">
-                            <h2>Education</h2>
-                            <p>Inform companies about your education life.</p>
+                            <!-- <h2>Education</h2> -->
+                            <!-- <p>Inform companies about your education life.</p> -->
                         </div>
                         <div class="input-text">
                             <div class="input-div">
                                 <input type="text" required require>
-                                <span>School Name</span>
+                                <span>Full Name</span>
                             </div>
                             <div class="input-div"> 
                                 <input type="text" required>
-                                <span>Board Name</span>
+                                <span>Email</span>
+                            </div>
+                            
+                        </div>
+                        <div class="input-text">
+                            <div class="input-div">
+                                <input type="text" required require>
+                                <span>Address</span>
                             </div>
                         </div>
                         <div class="input-text">
                             <div class="input-div">
                                 <input type="text" required require>
-                                <span>College/University name</span>
+                                <span>City</span>
                             </div>
+                            <div class="input-div"> 
+                                <input type="text" required>
+                                <span>Pin</span>
+                            </div>
+                            
                         </div>
-                        <div class="input-text">
+                        <!-- <div class="input-text">
                             <div class="input-div">
                                 <select>
                                     <option>Select Course</option>
@@ -101,7 +114,7 @@
                                     <option>M-TECH</option>
                                 </select>
                             </div>
-                        </div>
+                        </div> -->
                         <div class="buttons button_space">
                             <button class="back_button">Back</button>
                             <button class="next_button">Next Step</button>
@@ -110,17 +123,24 @@
                     <div class="main">
                         <small><i class="fa fa-smile-o"></i></small>
                         <div class="text">
-                            <h2>Work Experiences</h2>
+                            <h2>Government issued ID</h2>
                             <p>Can you talk about your past work experience?</p>
                         </div>
                         <div class="input-text">
                             <div class="input-div">
                                 <input type="text" required require>
-                                <span>Experience 1</span>
+                                <span>ID Proof</span>
+                            </div>
+                           
+                        </div>
+                        <div class="input-text">
+                            <div class="input-div">
+                                
+                                <span>ID Proof</span>
                             </div>
                             <div class="input-div"> 
-                                <input type="text" required require>
-                                <span>Position</span>
+                                <input type="file" required require>
+                                <!-- <span>choose</span> -->
                             </div>
                         </div>
                         <div class="input-text">
@@ -157,7 +177,16 @@
                             <h2>User Photo</h2>
                             <p>Upload your profile picture and share yourself.</p>
                         </div>
-                        <div class="user_card">
+                        <button id="start-camera">Start Camera</button>
+<video id="video" width="320" height="240" autoplay></video>
+<button id="click-photo">Click Photo</button>
+<div id="dataurl-container">
+    <canvas id="canvas" width="320" height="240"></canvas>
+    <div id="dataurl-header">Image Data URL</div>
+    <textarea id="dataurl" readonly></textarea>
+</div>
+
+                        <!-- <div class="user_card">
                             <span></span>
                             <div class="circle">
                                 <span><img src="https://i.imgur.com/hnwphgM.jpg"></span>
@@ -175,7 +204,7 @@
                                     <p>17 last day . 94Apply</p>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                         <div class="buttons button_space">
                             <button class="back_button">Back</button>
                             <button class="submit_button">Submit</button>
@@ -202,6 +231,97 @@
             </div>
         </div>
     </div>
+     <!-- live photo style -->
+     <style type="text/css">
+
+        button {
+            width: 120px;
+            padding: 10px;
+            display: block;
+            margin: 20px auto;
+            border: 2px solid #111111;
+            cursor: pointer;
+            background-color: white;
+        }
+        
+        #start-camera {
+            margin-top: 50px;
+        }
+        
+        #video {
+            display: none;
+            margin: 50px auto 0 auto;
+        }
+        
+        #click-photo {
+            display: none;
+        }
+        
+        #dataurl-container {
+            display: none;
+        }
+        
+        #canvas {
+            display: block;
+            margin: 0 auto 20px auto;
+        }
+        
+        #dataurl-header {
+            text-align: center;
+            font-size: 15px;
+        }
+        
+        #dataurl {
+            display: block;
+            height: 100px;
+            width: 320px;
+            margin: 10px auto;
+            resize: none;
+            outline: none;
+            border: 1px solid #111111;
+            padding: 5px;
+            font-size: 13px;
+            box-sizing: border-box;
+        }
+        
+        </style>
+    <!-- live photo script -->
+    <script>
+
+        let camera_button = document.querySelector("#start-camera");
+        let video = document.querySelector("#video");
+        let click_button = document.querySelector("#click-photo");
+        let canvas = document.querySelector("#canvas");
+        let dataurl = document.querySelector("#dataurl");
+        let dataurl_container = document.querySelector("#dataurl-container");
+        
+        camera_button.addEventListener('click', async function() {
+               let stream = null;
+        
+            try {
+                stream = await navigator.mediaDevices.getUserMedia({ video: true, audio: false });
+            }
+            catch(error) {
+                alert(error.message);
+                return;
+            }
+        
+            video.srcObject = stream;
+        
+            video.style.display = 'block';
+            camera_button.style.display = 'none';
+            click_button.style.display = 'block';
+        });
+        
+        click_button.addEventListener('click', function() {
+            canvas.getContext('2d').drawImage(video, 0, 0, canvas.width, canvas.height);
+               let image_data_url = canvas.toDataURL('image/jpeg');
+            
+            dataurl.value = image_data_url;
+            dataurl_container.style.display = 'block';
+        });
+        
+        </script>
 
 
 

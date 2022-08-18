@@ -706,6 +706,8 @@
 </div>
 
 
+
+
 <!-- Modal withdraw-->
 <div class="modal fade" id="withdraw">
     <div class="modal-dialog modal-dialog-centered" role="document">
@@ -735,4 +737,29 @@
         </div>
     </div>
 </div>
+
+
+<script>
+     (document.querySelector(".sweet-success-cancel").onclick = function () {
+            swal(
+                {
+                    title: "Confirm",
+                    text: "Are you sure you want to log out",
+                    type: "warning",
+                    showCancelButton: !0,
+                    confirmButtonColor: "#DD6B55",
+                    confirmButtonText: "Log Out",
+                    cancelButtonText: "cancel",
+                    closeOnConfirm: !1,
+                    closeOnCancel: !1,
+                },
+                function (e) {
+                    
+                    e ? swal("Deleted !!", "Hey, your imaginary file has been deleted !!", "success") : swal("Cancelled !!", "Hey, your imaginary file is safe !!", "error");
+                }
+            );
+        })
+
+
+</script>
 {% endblock %}
