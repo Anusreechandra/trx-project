@@ -43,7 +43,6 @@ INSTALLED_APPS = [
     'home',
     'trxadmin',
     'member',
-    'phone_field',
 
 ]
 

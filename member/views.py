@@ -2,11 +2,14 @@ from multiprocessing import context
 from django import views
 from django.shortcuts import render
 from django.contrib.auth.decorators import login_required
+from django.contrib.auth.models import User
 
 # Create your views here.
 
 @login_required(login_url="/member/login")
 def index(request):
+    user=User.objects.get(id=request.session[userid])
+    print(user)
     context ={
         'is_index':True
     }
